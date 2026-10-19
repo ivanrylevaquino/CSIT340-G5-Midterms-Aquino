@@ -2,6 +2,7 @@
 import {useState} from "react";
 import Intro from "./Intro.jsx"
 import Stats from "./Stats.jsx"
+import Controls from "./Controls.jsx"
 import Contribute from "./Contribute.jsx";
 
 function Hero (){
@@ -31,32 +32,7 @@ function Hero (){
       
       <Intro author="Ivan Aquino"/>
 
-      <div className="flex justify-center gap-4 py-6">
-        <button
-          className="cursor-pointer rounded-lg bg-[#800020] px-8 py-3 text-xl font-bold text-[#FFF9F2]"
-          onClick={handleStar}
-        >
-          Star
-        </button>
-        <button
-          className="cursor-pointer rounded-lg bg-[#D45060] px-8 py-3 text-xl font-bold text-[#FFF9F2]"
-          onClick={handleDownload}
-        >
-          Download
-        </button>
-        <button
-          className="cursor-pointer rounded-lg bg-[#000000] px-8 py-3 text-xl font-bold text-[#FFF9F2]"
-          onClick={handleReport}
-        >
-          Report issue
-        </button>
-        <button
-          className="cursor-pointer rounded-lg border border-[#800020] px-8 py-3 text-xl font-bold"
-          onClick={handleReset}
-        >
-          Reset
-        </button>
-      </div>
+      <Controls handleStar={handleStar} handleDownload={handleDownload} handleReport={handleReport} handleReset={handleReset} />
 
       <Stats stars={stars} downloads={downloads} issues={issues}/>
       <Contribute issues={issues}/>
