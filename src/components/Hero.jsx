@@ -8,13 +8,10 @@ function Hero (){
     const [stars, setStars] = useState(0);
     const [downloads, setDownloads] = useState(0);
     const [issues, setIssues] = useState(5);
-    const [contributors, setContrib] = useState(0);
     function handleStar() {
       setStars(stars + 1);
     }
-    function handleContrib(){
-      setContrib(contributors+1);
-    }
+    
   
     function handleDownload() {
       setDownloads(downloads + 1);
@@ -28,7 +25,6 @@ function Hero (){
       setStars(0);
       setDownloads(0);
       setIssues(5);
-      setContrib(0)
     }
     return(
       <>
@@ -63,7 +59,7 @@ function Hero (){
       </div>
 
       <Stats stars={stars} downloads={downloads} issues={issues}/>
-      <Contribute contributors={contributors}/>
+      <Contribute issues={issues}/>
       </>
     )
 }
