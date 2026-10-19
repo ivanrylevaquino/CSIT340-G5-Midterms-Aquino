@@ -5,7 +5,7 @@ function Navbar (){
         <ul className="flex gap-10 text-xl">
           <li>Docs</li>
           <li>Components</li>
-          <li><a href="https://github.com/ivanrylevaquino/CSIT340-G5-Midterms-Aquino">Github</a></li>
+          <li><a href="https://github.com/ivanrylevaquino/CSIT340-G5-Midterms-Aquino" >Github</a></li>
         </ul>
         <p className="rounded-full bg-[#D45060] px-5 py-2 text-lg font-bold">v1.0</p>
       </nav>
