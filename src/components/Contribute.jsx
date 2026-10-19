@@ -11,7 +11,7 @@ function Contribute ({issues}){
     }
     return(
         
-        <div className="mx-20 mb-8 flex itemss-center justify-between rounded-xl bg-[#800020] p-6 text-[#FFF9F2]">
+        <div className="mx-20 mb-8 flex items-center justify-between rounded-xl bg-[#800020] p-6 text-[#FFF9F2]">
             <div>
                 <h3 className="text-2xl font-bold">Want to contribute? </h3>
             </div>
